@@ -1,0 +1,43 @@
+name: detection_app
+description: "An app to detect lechmaniasis"
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  
+  file:
+  intl: 
+  shared_preferences: 
+  cupertino_icons:
+  model_viewer_plus: 
+  camera: 
+  path_provider: 
+  image_picker:
+  file_picker: 
+  share_plus:
+  hive:
+  hive_flutter: 
+  provider:
+  http:
+  uuid:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: 
+  hive_generator:
+  build_runner:
+
+flutter:
+  generate: true
+  uses-material-design: true
+
+  assets:
+    - assets/
