@@ -1,4 +1,4 @@
-package com.example.detection_app
+package com.example.fixahead
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,10 +1,10 @@
-import 'package:detection_app/boxes.dart';
-import 'package:detection_app/main_layout.dart';
-import 'package:detection_app/result.dart';
-import 'package:detection_app/router/route_constants.dart';
+import 'package:fixahead/boxes.dart';
+import 'package:fixahead/main_layout.dart';
+import 'package:fixahead/result.dart';
+import 'package:fixahead/router/route_constants.dart';
 import 'package:flutter/material.dart';
 import 'dart:io';
-import 'package:detection_app/classes/language_constants.dart';
+import 'package:fixahead/classes/language_constants.dart';
 
 class NewCaseResult extends StatefulWidget {
   final File imageFile;
@@ -125,7 +125,7 @@ class _NewCaseResultState extends State<NewCaseResult> {
                                                   padding:
                                                       const EdgeInsets.all(0.0),
                                                   backgroundColor:
-                                                      const Color(0xFF00B57A),
+                                                      const Color(0xFF085cc9),
                                                   foregroundColor: Colors.white,
                                                   minimumSize:
                                                       const Size(120, 40),
@@ -196,13 +196,7 @@ class _NewCaseResultState extends State<NewCaseResult> {
                                             child: CircularProgressIndicator(),
                                           );
                                         }
-                                        return ColorFiltered(
-                                          colorFilter: ColorFilter.mode(
-                                            Colors.grey.withOpacity(0.9),
-                                            BlendMode.saturation,
-                                          ),
-                                          child: child,
-                                        );
+                                        return child;
                                       },
                                     ),
                                     Align(
@@ -214,7 +208,7 @@ class _NewCaseResultState extends State<NewCaseResult> {
                                             colors: [
                                               Color.fromARGB(
                                                   255, 205, 221, 216),
-                                              Color(0xFF00B57A)
+                                              Color(0xFF085cc9)
                                             ],
                                             begin: Alignment.topCenter,
                                             end: Alignment.bottomCenter,
@@ -239,7 +233,7 @@ class _NewCaseResultState extends State<NewCaseResult> {
                               child: SizedBox(
                                 width: MediaQuery.of(context).size.width * 0.9,
                                 child: const Divider(
-                                    color: Color(0xFF00B57A), thickness: 2),
+                                    color: Color(0xFF085cc9), thickness: 2),
                               ),
                             ),
                             Padding(
@@ -274,15 +268,6 @@ class _NewCaseResultState extends State<NewCaseResult> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 4.0),
-                              child: Text(
-                                translation(context).newCaseResultNote,
-                                style: const TextStyle(
-                                    fontSize: 12, fontWeight: FontWeight.bold),
-                              ),
-                            ),
                             Padding(
                               padding: const EdgeInsets.only(
                                   top: 10.0,

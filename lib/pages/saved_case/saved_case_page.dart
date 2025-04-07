@@ -1,9 +1,9 @@
 import 'dart:io';
-import 'package:detection_app/boxes.dart';
-import 'package:detection_app/pages/saved_case/saved_case_result.dart';
-import 'package:detection_app/pages/utils/date_fomat.dart';
+import 'package:fixahead/boxes.dart';
+import 'package:fixahead/pages/saved_case/saved_case_result.dart';
+import 'package:fixahead/pages/utils/date_fomat.dart';
 import 'package:flutter/material.dart';
-import 'package:detection_app/classes/language_constants.dart';
+import 'package:fixahead/classes/language_constants.dart';
 
 class SavedCasePage extends StatefulWidget {
   const SavedCasePage({super.key});
@@ -80,7 +80,7 @@ class PossibilityCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isDarkMode = Theme.of(context).brightness == Brightness.dark;
-    final textColor = isDarkMode ? Colors.teal[800] : Colors.teal[50];
+    final textColor = isDarkMode ? Colors.blue[800] : Colors.blue[50];
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: InkWell(
@@ -154,7 +154,7 @@ class PossibilityCard extends StatelessWidget {
                 ),
                 const Icon(
                   Icons.arrow_forward_ios_outlined,
-                  color: Color(0xFF00B57A),
+                  color: Color.fromARGB(255, 11, 8, 201),
                   size: 40,
                 ),
               ],

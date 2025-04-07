@@ -1,5 +1,5 @@
-name: detection_app
-description: "An app to detect lechmaniasis"
+name: fixahead
+description: "An app to help diagnose and maintain material defects."
 publish_to: 'none'
 version: 0.1.0
 
@@ -16,7 +16,6 @@ dependencies:
   intl: 
   shared_preferences: 
   cupertino_icons:
-  model_viewer_plus: 
   camera: 
   path_provider: 
   image_picker:

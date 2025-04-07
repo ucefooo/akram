@@ -1,6 +1,6 @@
 import 'dart:math';
 
-import 'package:detection_app/pages/new_case/new_case_image_preview.dart';
+import 'package:fixahead/pages/new_case/new_case_image_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
 import 'package:image_picker/image_picker.dart';
@@ -8,7 +8,7 @@ import 'package:path_provider/path_provider.dart';
 // ignore: depend_on_referenced_packages
 import 'package:path/path.dart' as path;
 import 'dart:io';
-import 'package:detection_app/classes/language_constants.dart';
+import 'package:fixahead/classes/language_constants.dart';
 
 class CameraPage extends StatefulWidget {
   const CameraPage({super.key});
@@ -390,16 +390,16 @@ class _CameraPageState extends State<CameraPage> with WidgetsBindingObserver {
             width: 50,
             height: 50,
             decoration: BoxDecoration(
-              border: Border.all(color: const Color(0xFF2FCE90), width: 2),
+              border: Border.all(color: const Color(0xFF085cc9), width: 2),
               borderRadius: BorderRadius.circular(15),
               image: null,
             ),
-            child: const Icon(Icons.photo, color: Color(0xFF2FCE90)),
+            child: const Icon(Icons.photo, color: Color(0xFF085cc9)),
           ),
         ),
         Text(
           translation(context).newCasePageCameraGalleryButton,
-          style: const TextStyle(color: Color(0xFF2FCE90)),
+          style: const TextStyle(color: Color(0xFF085cc9)),
         ),
       ],
     );
@@ -409,7 +409,7 @@ class _CameraPageState extends State<CameraPage> with WidgetsBindingObserver {
     return Column(
       children: [
         FloatingActionButton(
-          backgroundColor: const Color(0xFF2FCE90),
+          backgroundColor: const Color(0xFF085cc9),
           shape: const CircleBorder(),
           child: Icon(Icons.photo_camera_outlined, color: textColor, size: 36),
           onPressed: () async {
@@ -453,7 +453,7 @@ class _CameraPageState extends State<CameraPage> with WidgetsBindingObserver {
         const SizedBox(height: 10),
         // const Text(
         //   'Take Picture',
-        //   style: TextStyle(color: Color(0xFF2FCE90), fontSize: 16),
+        //   style: TextStyle(color: Color(0xFF085cc9), fontSize: 16),
         // ),
       ],
     );
@@ -489,7 +489,7 @@ class _CameraPageState extends State<CameraPage> with WidgetsBindingObserver {
                 const SizedBox(height: 20),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFF2FCE90),
+                    backgroundColor: const Color(0xFF085cc9),
                     minimumSize: const Size(double.infinity, 45),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
@@ -527,14 +527,14 @@ class _CameraPageState extends State<CameraPage> with WidgetsBindingObserver {
             width: 32,
             height: 32,
             decoration: BoxDecoration(
-              color: const Color(0xFF2FCE90).withOpacity(0.1),
+              color: const Color(0xFF085cc9).withOpacity(0.1),
               shape: BoxShape.circle,
             ),
             child: Center(
               child: Text(
                 number,
                 style: const TextStyle(
-                  color: Color(0xFF2FCE90),
+                  color: Color(0xFF085cc9),
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -558,20 +558,20 @@ class _CameraPageState extends State<CameraPage> with WidgetsBindingObserver {
             width: 50,
             height: 50,
             decoration: BoxDecoration(
-              border: Border.all(color: const Color(0xFF2FCE90), width: 2),
+              border: Border.all(color: const Color(0xFF085cc9), width: 2),
               borderRadius: BorderRadius.circular(25),
               image: null,
             ),
             child: const Icon(
               Icons.question_mark_outlined,
-              color: Color(0xFF2FCE90),
+              color: Color(0xFF085cc9),
               size: 30,
             ),
           ),
         ),
         Text(
           translation(context).newCasePageCameraTipsButton,
-          style: const TextStyle(color: Color(0xFF2FCE90), fontSize: 16),
+          style: const TextStyle(color: Color(0xFF085cc9), fontSize: 16),
         ),
       ],
     );
@@ -613,7 +613,7 @@ class GuidelinePainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final backgroundPaint = Paint()
-      ..color = const Color(0xFF2FCE90).withOpacity(0.2);
+      ..color = const Color(0xFF085cc9).withOpacity(0.2);
     canvas.drawRect(
       Rect.fromLTWH(0, 0, size.width, size.height),
       backgroundPaint,
@@ -627,7 +627,7 @@ class GuidelinePainter extends CustomPainter {
     );
 
     final paint = Paint()
-      ..color = const Color(0xFF2FCE90)
+      ..color = const Color(0xFF085cc9)
       ..strokeWidth = 2
       ..style = PaintingStyle.stroke;
 
@@ -708,7 +708,7 @@ class GuidelinePainter extends CustomPainter {
     );
 
     final centerPaint = Paint()
-      ..color = const Color(0xFF2FCE90)
+      ..color = const Color(0xFF085cc9)
       ..style = PaintingStyle.fill;
 
     canvas.drawCircle(
@@ -718,7 +718,7 @@ class GuidelinePainter extends CustomPainter {
     );
 
     final crosshairPaint = Paint()
-      ..color = const Color(0xFF2FCE90)
+      ..color = const Color(0xFF085cc9)
       ..strokeWidth = 1;
 
     const crosshairLength = 10.0;
@@ -737,7 +737,7 @@ class GuidelinePainter extends CustomPainter {
       text: TextSpan(
         text: translation(context).newCasePageCameraGuidelineText,
         style: const TextStyle(
-          color: Color(0xFF2FCE90),
+          color: Color(0xFF085cc9),
           fontSize: 16,
           fontWeight: FontWeight.bold,
         ),

@@ -1,5 +1,5 @@
-import 'package:detection_app/classes/language_constants.dart';
-import 'package:detection_app/pages/new_case/new_case_lodaing_analyze.dart';
+import 'package:fixahead/classes/language_constants.dart';
+import 'package:fixahead/pages/new_case/new_case_lodaing_analyze.dart';
 import 'package:flutter/material.dart';
 import 'dart:io';
 
@@ -143,7 +143,7 @@ class ImagePreviewPage extends StatelessWidget {
               );
             },
             style: ElevatedButton.styleFrom(
-              backgroundColor: const Color(0xFF00B57A),
+              backgroundColor: const Color(0xFF085cc9),
               foregroundColor: Colors.white,
               minimumSize: const Size(150, 40),
               shape: RoundedRectangleBorder(

@@ -1,4 +1,4 @@
-import 'package:detection_app/classes/language_constants.dart';
+import 'package:fixahead/classes/language_constants.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -31,7 +31,7 @@ class _HomePageState extends State<HomePage> {
             child: SizedBox(
               width: double.infinity,
               child: Image.asset(
-                'assets/iamge.png',
+                'assets/mantenimiento.png',
                 fit: BoxFit.cover,
               ),
             ),

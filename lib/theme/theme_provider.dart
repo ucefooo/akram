@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:detection_app/theme/theme.dart';
+import 'package:fixahead/theme/theme.dart';
 
 class ThemeProvider extends ChangeNotifier {
   late ThemeData _themeData;

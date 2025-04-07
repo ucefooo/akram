@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:detection_app/classes/language.dart';
-import 'package:detection_app/classes/language_constants.dart';
-import 'package:detection_app/main.dart';
-import 'package:detection_app/theme/theme_provider.dart';
+import 'package:fixahead/classes/language.dart';
+import 'package:fixahead/classes/language_constants.dart';
+import 'package:fixahead/main.dart';
+import 'package:fixahead/theme/theme_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -86,7 +86,7 @@ class _SettingsPageState extends State<SettingsPage> {
                       ),
                       Switch(
                         value: _isDarkMode,
-                        activeColor: const Color(0xFF00B57A),
+                        activeColor: const Color(0xFF085cc9),
                         onChanged: (value) async {
                           setState(() {
                             _isDarkMode = value;
@@ -118,7 +118,7 @@ class _SettingsPageState extends State<SettingsPage> {
                               value: language,
                               child: Container(
                                 decoration: BoxDecoration(
-                                  color: isSelected && _isDarkMode ? const Color(0xFF00B57A) : null,
+                                  color: isSelected && _isDarkMode ? const Color(0xFF085cc9) : null,
                                   borderRadius: BorderRadius.circular(5),
                                 ),
                                 child: Row(
@@ -137,7 +137,7 @@ class _SettingsPageState extends State<SettingsPage> {
                                     if (isSelected)
                                       Icon(
                                         Icons.check,
-                                        color: _isDarkMode ? Colors.white : const Color(0xFF00B57A),
+                                        color: _isDarkMode ? Colors.white : const Color(0xFF085cc9),
                                       ),
                                   ],
                                 ),

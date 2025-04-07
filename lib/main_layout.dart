@@ -1,11 +1,11 @@
 import 'dart:async';
 
-import 'package:detection_app/classes/language.dart';
-import 'package:detection_app/classes/language_constants.dart';
-import 'package:detection_app/classes/menu_items.dart';
-import 'package:detection_app/main.dart';
-import 'package:detection_app/router/custom_router.dart';
-import 'package:detection_app/router/route_constants.dart';
+import 'package:fixahead/classes/language.dart';
+import 'package:fixahead/classes/language_constants.dart';
+import 'package:fixahead/classes/menu_items.dart';
+import 'package:fixahead/main.dart';
+import 'package:fixahead/router/custom_router.dart';
+import 'package:fixahead/router/route_constants.dart';
 import 'package:flutter/material.dart';
 
 class MainLayout extends StatefulWidget {
@@ -82,7 +82,7 @@ class _MainLayoutState extends State<MainLayout> {
 
   Widget languageIcon(BuildContext context, String languageCode) {
     return _whichLanguageSelected(context, languageCode)
-        ? const Icon(Icons.check, color: Color(0xFF00B57A), size: 25)
+        ? const Icon(Icons.check, color: Color(0xFF085cc9), size: 25)
         : const SizedBox.shrink();
   }
 
@@ -170,7 +170,7 @@ class _MainLayoutState extends State<MainLayout> {
                                     ),
                                   ],
                                 ),
-                                // _whichLanguageSelected(context) ? const Icon(Icons.check, color: Color(0xFF00B57A), size: 20) : const SizedBox.shrink(),
+                                // _whichLanguageSelected(context) ? const Icon(Icons.check, color: Color(0xFF085cc9), size: 20) : const SizedBox.shrink(),
                                 languageIcon(context, language.languageCode),
                               ],
                             ),
@@ -248,7 +248,7 @@ class _MainLayoutState extends State<MainLayout> {
           ],
           backgroundColor: currentRoute == homeRoute
               ? Theme.of(context).scaffoldBackgroundColor
-              : const Color(0xFF00B57A),
+              : const Color(0xFF085cc9),
         ),
         drawer: Drawer(
           child: _drawerList(context),
@@ -294,7 +294,7 @@ class _MainLayoutState extends State<MainLayout> {
         icon: Icons.settings,
         route: settingsRoute);
     return Container(
-      color: const Color(0xFF00B57A),
+      color: const Color(0xFF085cc9),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [

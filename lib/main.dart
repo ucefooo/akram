@@ -1,14 +1,14 @@
-import 'package:detection_app/boxes.dart';
-import 'package:detection_app/classes/language_constants.dart';
-import 'package:detection_app/main_layout.dart';
-import 'package:detection_app/pages/new_case/new_case_camera_first.dart';
-import 'package:detection_app/pages/saved_case/saved_case_page.dart';
-import 'package:detection_app/pages/settings_page/settings_page.dart';
-import 'package:detection_app/result.dart';
-import 'package:detection_app/theme/theme_provider.dart';
+import 'package:fixahead/boxes.dart';
+import 'package:fixahead/classes/language_constants.dart';
+import 'package:fixahead/main_layout.dart';
+import 'package:fixahead/pages/new_case/new_case_camera_first.dart';
+import 'package:fixahead/pages/saved_case/saved_case_page.dart';
+import 'package:fixahead/pages/settings_page/settings_page.dart';
+import 'package:fixahead/result.dart';
+import 'package:fixahead/theme/theme_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:detection_app/router/route_constants.dart';
+import 'package:fixahead/router/route_constants.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:provider/provider.dart';
 
@@ -50,10 +50,10 @@ class _MainAppState extends State<MainApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'detection_app',
+      title: 'fixahead',
       debugShowCheckedModeBanner: false,
       // theme: ThemeData(
-      //   primaryColor: const Color(0xFF00B57A),
+      //   primaryColor: const Color(0xFF085cc9),
       // ),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,

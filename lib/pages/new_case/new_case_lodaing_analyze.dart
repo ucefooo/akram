@@ -1,9 +1,9 @@
 import 'dart:convert';
 
-import 'package:detection_app/pages/new_case/new_case_result.dart';
+import 'package:fixahead/pages/new_case/new_case_result.dart';
 import 'package:flutter/material.dart';
 import 'dart:io';
-import 'package:detection_app/classes/language_constants.dart';
+import 'package:fixahead/classes/language_constants.dart';
 import 'package:http/http.dart' as http;
 
 class AnalyzeLoadingPage extends StatefulWidget {
@@ -144,7 +144,7 @@ class _AnalyzeLoadingPageState extends State<AnalyzeLoadingPage> {
                           onPressed: () => Navigator.of(context).pop(),
                           style: ElevatedButton.styleFrom(
                             padding: const EdgeInsets.all(0.0),
-                            backgroundColor: const Color(0xFF00B57A),
+                            backgroundColor: const Color(0xFF085cc9),
                             foregroundColor: Colors.white,
                             minimumSize: const Size(120, 40),
                             maximumSize: const Size(120, 40),
@@ -190,7 +190,7 @@ class _AnalyzeLoadingPageState extends State<AnalyzeLoadingPage> {
         style: const TextStyle(
             fontSize: 30,
             fontWeight: FontWeight.bold,
-            color: Color(0xFF00B57A)),
+            color: Color(0xFF085cc9)),
       ),
     );
   }

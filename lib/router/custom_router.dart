@@ -1,11 +1,11 @@
-import 'package:detection_app/pages/new_case/new_case_camera_first.dart';
+import 'package:fixahead/pages/new_case/new_case_camera_first.dart';
 import 'package:flutter/material.dart';
-import 'package:detection_app/pages/home_page/home_page.dart';
-import 'package:detection_app/pages/new_case/new_case_page.dart';
-import 'package:detection_app/pages/not_found_page.dart';
-import 'package:detection_app/pages/saved_case/saved_case_page.dart';
-import 'package:detection_app/pages/settings_page/settings_page.dart';
-import 'package:detection_app/router/route_constants.dart';
+import 'package:fixahead/pages/home_page/home_page.dart';
+import 'package:fixahead/pages/new_case/new_case_page.dart';
+import 'package:fixahead/pages/not_found_page.dart';
+import 'package:fixahead/pages/saved_case/saved_case_page.dart';
+import 'package:fixahead/pages/settings_page/settings_page.dart';
+import 'package:fixahead/router/route_constants.dart';
 
 class CustomRouter {
   static Route<dynamic> generatedRoute(

@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 ThemeData lightMode = ThemeData(
   brightness: Brightness.light,
   colorScheme: const ColorScheme.light(
-    primary: Color(0xFF00B57A), // Keep green
+    primary: Color(0xFF085cc9), // Keep green
     onPrimary: Colors.white,
-    secondary: Color(0xFF00B57A), // Keep green
+    secondary: Color(0xFF085cc9), // Keep green
     onSecondary: Colors.white,
     surface: Colors.white,
     onSurface: Colors.black,
@@ -14,7 +14,7 @@ ThemeData lightMode = ThemeData(
   ),
   scaffoldBackgroundColor: Colors.white,
   appBarTheme: const AppBarTheme(
-    backgroundColor: Color(0xFF00B57A), // Keep green
+    backgroundColor: Color(0xFF085cc9), // Keep green
     foregroundColor: Colors.white,
   ),
   textTheme: const TextTheme(
@@ -24,7 +24,7 @@ ThemeData lightMode = ThemeData(
   ),
   iconTheme: const IconThemeData(color: Colors.black),
   buttonTheme: const ButtonThemeData(
-    buttonColor: Color(0xFF00B57A), // Keep green
+    buttonColor: Color(0xFF085cc9), // Keep green
     textTheme: ButtonTextTheme.primary,
   ),
 );
@@ -32,9 +32,9 @@ ThemeData lightMode = ThemeData(
 ThemeData darkMode = ThemeData(
   brightness: Brightness.dark,
   colorScheme: const ColorScheme.dark(
-    primary: Color(0xFF00B57A), // Keep green
+    primary: Color(0xFF085cc9), // Keep green
     onPrimary: Colors.black,
-    secondary: Color(0xFF00B57A), // Keep green
+    secondary: Color(0xFF085cc9), // Keep green
     onSecondary: Colors.black,
     surface: Colors.black,
     onSurface: Colors.white,
@@ -43,7 +43,7 @@ ThemeData darkMode = ThemeData(
   ),
   scaffoldBackgroundColor: Colors.black,
   appBarTheme: const AppBarTheme(
-    backgroundColor: Color(0xFF00B57A), // Keep green
+    backgroundColor: Color(0xFF085cc9), // Keep green
     foregroundColor: Colors.black,
   ),
   textTheme: const TextTheme(
@@ -53,7 +53,7 @@ ThemeData darkMode = ThemeData(
   ),
   iconTheme: const IconThemeData(color: Colors.white),
   buttonTheme: const ButtonThemeData(
-    buttonColor: Color(0xFF00B57A), // Keep green
+    buttonColor: Color(0xFF085cc9), // Keep green
     textTheme: ButtonTextTheme.primary,
   ),
 );
